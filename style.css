@@ -23,6 +23,8 @@ body{
     border-radius: 16px;
     border: 1px solid #3a3a3a;
     padding: 40px;
+    position : sticky;
+    top: 40px;
 
 }
 .main-content{
@@ -189,4 +191,64 @@ nav a:hover, .active{
 
 #education{
     margin-top: 30px;
+}
+.edtech{
+    /* padding-left: 20px; */
+    position: relative;
+}
+.year{
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 4px;
+}
+.degree{
+    color: #e0e0e0;
+    font-size: 1.2 rem;
+    font-weight: 500;
+    margin-bottom: 1px;
+}
+.college{
+    font-style: italic ;
+    color : #a0a0a0;
+    margin-bottom: 5px;
+}
+.per{
+    color: #a0a0a0;
+}
+.edfirst, .edsecond, .edthird{
+    margin-bottom:30px;
+    padding-left:25px ;
+    position: relative;
+}
+/* .edsecond{
+    margin-bottom: 30px;
+} */
+.goal{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border : 3px solid #FFBF00;
+    position: absolute;
+    top: 5px ;
+    left: 0px;
+    z-index: 5;
+}
+.liner{
+    position: absolute;
+    width: 2px;
+    top: 0px;
+    bottom: 0px;
+    border: 2px solid #3a3a3a;
+    left: 5px;
+}
+
+@media screen and (max-width : 1200px){
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .sidebar{
+        position: static;
+        height: auto;
+    }
 }
